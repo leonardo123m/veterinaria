@@ -1,0 +1,94 @@
+h1{/*A todos los "h1" de las paginas les va a poner el color blanco*/
+    color:white;
+}
+
+header, nav, .main, footer{/*A todos los "header", "nav", "main", "footer" les va 
+    a poner un ancho del 80%, con maximo de ancho de 1000 pixeles y un margen de
+    10 pixeles automatico (cuando hagas la ventana mas pequeña se ajusta a la
+    pantallla el diseño de la pagina)*/
+    width: 80%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+body {/*A todos los "body" (todo lo que se va a ver en la pagina) tendra una imagen de 
+    fondo y la centra para que no salga la imagen repetidas veces (salian como 6 
+    imagenes pequeñas de fondo)*/
+    background-image:url('imagenes/f2.jpg');   
+    background-size: cover;
+    background-position: center;
+}
+
+nav{/*LLama a todos los "nav" de las paginas (es una etiqueta que se utiliza para
+     definir una seccion de navegacion en un documento web) les pone color, fondo, les quita 
+     el desbordamiento (borde) y les pone un margen de 20 pixeles en auto (para que cuando la
+     pagina se haga pequeña se ajuste a el mismo diseño)*/
+    color:rgb(77, 77, 243);
+    background: rgb(77, 77, 243);
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+nav ul{/*LLama a todas las listas (ul(lista no ordenada)) dentro de un "nav" para quitarles 
+    el estilo de lista*/
+    list-style: none;
+}
+nav ul li{/*LLama a todos las "li"(elemento de lista declara cada uno de los elementos de una 
+    lista) que estann dentro de un "ul" que estan dentro de un "nav", los manda a la izquierda 
+    y se usa un padding(el padding es el espacio entre los bordes de un elemento y su contenido)
+     de 10 pixeles y 20 pixeles*/
+    float: left;
+    padding: 10px 20px;
+}
+nav ul li a{/*Llama a todas las paginas (a ( crea un enlace a otras páginas de internet, 
+    archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier 
+    otra url)) que estan dentro de un "li" que esta dentro de un "ul" que esta dentro 
+    de un "nav" para poner todo en blanco y quitarle la decoracion de texto*/
+    color:white;
+    text-decoration: none;
+}
+.main .articles{/*Llama a todas las clases "articles" que estan dentro de una clase "main" 
+    para ponerles ancho de 60%, un margen a la derecha de 1.5%, fondo de color negro y 
+    se posiciona a la izquierda*/
+    width: 60%;
+    margin-right: 1.5%;
+    background: rgb(0, 0, 0);
+    float:left;
+}
+.main .articles article{/*llama a todos los articulos(article) dentro de la clase "articles" 
+    que estan dentro de la clase "main" para proporcionarles:una padding de 10 pixeles 
+    (un padding es la cantidad de espacio entre el borde y el contenido del elemento), 
+    color morado, espacio entre el elemento de abajo ( margin-bottom es la propiedad de
+     un elemento que establece el espacio requerido en la parte inferior de un elemento, en
+      este caso de 10 pixeles) y a las letras le pone un color blanco*/
+    padding: 10px;
+    background: rgb(79, 26, 236);
+    margin-bottom: 10px;
+    color:white;
+}
+aside{/*Llama a todos los "aside" de las paginas (un aside representa una seccion de una pagina 
+    que consiste en contenido que esta indirectamente relacionado con el contenido principal 
+    del documento) para proporcionarle lo siguiente: ancho de 30%, que este a la derecha, que
+     sea de color rosa(masomenos), un espacio de 25 pixeles a la derecha, con ayuda del
+    "box-sizing"(indica como se deben calcular las medidas de un elemento) en este caso el 
+    "aside" se le quita el borde y a sus letras las pone de color blanco*/
+    width:30%;
+    float:left;
+    background: rgb(144, 39, 153);
+    padding: 25px;
+    box-sizing: border-box;
+    color:white;
+}
+
+footer{/*Llama a todos los "footer" de las paginas (un footer indica el termino del sitio web
+     dentro de la estructura) limpia todos los elementos que esten flotando (que no haiga nungun 
+     elemento mas al lado de estos), lo hace de color rojo (algo asi), todas sus letras
+     deben de ser de color blanco, un pading (de 5 pixeles) para centrar mas el texto y
+     hace que el "footer" este centrado */
+    
+    clear:both;
+    background: rgb(114, 4, 4);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
